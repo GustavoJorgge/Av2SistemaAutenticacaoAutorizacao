@@ -33,4 +33,12 @@ public class UsuarioController {
         String nomeUsuario = usuarioService.extractUsername(token);
         return "Gerente: " + nomeUsuario;
     }
+
+    @Secured("ADMIN")
+    @GetMapping(value = "/admin/{token}")
+    public String buscaAdmin(@PathVariable String token) {
+        System.out.println("Chegou aqui controller");
+        String nomeUsuario = usuarioService.extractUsername(token);
+        return "Admin: " + nomeUsuario;
+    }
 }
