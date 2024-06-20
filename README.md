@@ -24,6 +24,9 @@ public class UsuarioController {
     // Endpoints de login,buscar nome etc.
 }
 ```
+## Arquitetura do projeto:
+
+![image](https://github.com/GustavoJorgge/Av2SistemaAutenticacaoAutorizacao/assets/99773984/5c6d751d-a575-4f1c-8972-1293f55bb9b4)
 
 ## Endpoints
 `Realizar Login: /login`
